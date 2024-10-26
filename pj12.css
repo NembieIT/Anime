@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@500&family=Rubik+Bubbles&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Topbar */
+.topbar {
+    background-color: #001242;
+    width: 100%;
+}
+.topbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.topbar-items div:first-child {
+    display: flex;
+    align-items: center;
+}
+.topbar-items span {
+    height: 35px;
+    width: 1px;
+    background-color: #56D1FF;
+}
+.topbar-items i {
+    color: #56D1FF;
+}
+.topbar-items * {
+    margin: 6px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.topbar-items a:hover {
+    color: #56D1FF;
+    cursor: text;
+    transition: 0.8s;
+}
+/* Topbar */
+
+/* Introduce */
+.Introduce {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    animation: changepics infinite;
+    animation-duration: 20s;
+}
+@keyframes changepics {
+    0% {
+        background-image: url(./pics/pexels-yuting-gao-1737957.jpg);
+    }
+    25% {
+        background-image: url(./pics/pexels-david-gari-18325210.jpg);
+    }
+    50% {
+        background-image: url(./pics/pexels-jorge-soto-farias-4078599.jpg);
+    }
+    75% {
+        background-image: url(./pics/pexels-matthis-volquardsen-2156922.jpg);
+    }
+    100% {
+        background-image: url(./pics/pexels-yuting-gao-1737957.jpg);
+    }
+}
+.Menubar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(12, 62, 197,0.3);
+}
+.Menubar * {
+    margin: 5px 0;
+}
+.Logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+.Menubar-Items ul {
+    display: flex;
+    list-style: none;
+}
+.Menubar-Items ul .Menuborder {
+    margin: 0 20px;
+    border-bottom: 3px solid rgb(12, 62, 197,0);
+}
+.Menubar-Items ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.Menubar-Items ul .Menuborder:hover {
+    border-bottom: 3px solid #55595c;
+    transition: 0.2s;
+}
+.Menubar-Items ul li a:hover {
+    color: #56D1FF;
+}
+.Menubar-Items ul div:first-child {
+    border-bottom: 3px solid #55595c;
+}
+.MenubarHasDropDown {
+    position: relative;
+}
+.MenubarHasDropDown ul{
+    position: absolute;
+    display: block;
+    margin-top: 30px;
+    margin-left: -20px;
+    background-color: white;
+    width: 200px;
+    opacity: 1;
+    visibility: hidden;
+}
+.MenubarHasDropDown ul li {
+    text-align: center;
+}
+.MenubarHasDropDown ul li{
+    padding: 8px 0;
+    cursor: pointer;
+}
+.MenubarHasDropDown ul li a {
+    color: #001242;
+}
+.MenubarHasDropDown ul li:hover, .MenubarHasDropDown ul li:hover a {
+    background-color: #56D1FF;
+    color: white;
+}
+.MenubarHasDropDown:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    margin-top: 8px;
+    animation: menudropdown 0.3s;
+}
+@keyframes menudropdown {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.Searchbox * {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+.Searchbox input {
+    height: 30px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: -12px;
+}
+.Searchbox i {
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Searchbox i:hover {
+    background-color: white;
+    transition: 0.3s ease;
+}
+.Searchboxadd {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease;
+
+}
+
+.Introduce-text {
+    text-align: center;
+    color: white;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 12%;
+}
+.Introduce-text-btn {
+    margin-top: 20px;
+}
+.Introduce-text-btn button {
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    margin: 0 5px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+}
+.Introduce-text-btn button:first-child {
+    background-color: #56d1ff;
+}
+.Introduce-text-btn button:last-child {
+    background: transparent;
+    border: 3px solid white;
+}
+.Introduce-text-btn button:first-child:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    transition: 0.2s;
+}
+.Introduce-text-btn button:last-child:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    transition: 0.2s;
+    border: none;
+}
+/* Introduce */
+
+/* 4-boxs */
+.four-boxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.four-boxs-box {
+    height: 200px;
+    width: 300px;
+    background-color: #56D1FF;
+    border-radius: 0% 20% 0% 0% / 0% 20% 0% 0% ;
+    text-align: center;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 0 25px;
+    margin-top: -85px;
+}
+.four-boxs-box i {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.About4Bsolutions {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.About4Bsolutions-left {
+    flex-basis: 60%;
+    text-align: center;
+}
+.About4Bsolutions-right {
+    flex-basis: 40%;
+}
+.About4Bsolutions-left img{
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 0% 25% 0% 0% / 0% 25% 0% 0% ;
+}
+.About4Bsolutions-left-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    margin-top: -50px;
+    margin-left: 20%;
+}
+.About4Bsolutions-left-items div:first-child {
+    background-color: #56D1FF;
+    color: white;
+    font-weight: 700;
+    height: 80px;
+}
+.About4Bsolutions-left-items span {
+    font-size: 25px;
+}
+.About4Bsolutions-left-items div:last-child {
+    background-color: #0e2155;
+    height: 80px;
+    border-radius: 0% 33% 0% 0% / 0% 33% 0% 0% ;
+    width: 80px;
+}
+
+.About4Bsolutions-right {
+    flex-basis: 40%;
+}
+.About4Bsolutions-right-items1 {
+    display: flex;
+    align-items: center;
+    color: #56D1FF;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.About4Bsolutions-right-items1 div {
+    height: 30px;
+    background-color: #56D1FF;
+    width: 4px;
+    margin-right: 20px;
+}
+.About4Bsolutions-right-text1 {
+    color: #666666;
+    width: 500px;
+}
+.About4Bsolutions-right-items2 {
+    margin: 40px 0px;
+    width: 500px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #001242;
+}
+.About4Bsolutions-right-items3 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.About4Bsolutions-right-items3 i {
+    color: #56D1FF;
+    margin-right: 10px;
+    
+}
+.About4Bsolutions-right-items4 {
+    margin-top: 50px;
+    color: #666666;
+    font-weight: 700;
+}
+.About4Bsolutions-right-items4 ul{
+    margin-left: 50px;
+} 
+.About4Bsolutions-right-items5 {
+    margin-top: 60px;
+} 
+.About4Bsolutions-right-items5 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+.About4Bsolutions-right-items5 button{
+    background-color: #56D1FF;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 30px;
+    width: 140px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.About4Bsolutions-right-items3:hover p {
+    color: #0e2155;
+}
+.About4Bsolutions-right-items5:hover button{
+    transform: scale(1.2);
+    background-color: #0923C2;
+}
+/* About4Bsolutions */
+
+.FeaturesSolutions {
+    margin-left: 12%;
+    margin-top: 130px;
+}
+.FeaturesSolutions-items {
+    display: flex;
+    align-items: center;
+    color: #56D1FF;
+    font-weight: 700;
+    font-size: 20px;
+}
+.FeaturesSolutions-items div {
+    width: 3px;
+    height: 20px;
+    background-color: #56D1FF;
+    margin-right: 10px;
+}
+.FeaturesSolutions h2 {
+    font-size: 25px;
+    margin-top: 15px;
+}
